@@ -1,4 +1,10 @@
-﻿//Метод создания массива из менее, чем трёх символов
+﻿// Метод преобразования строки в массив
+string[] StringToArray(string array)
+{
+    string[] stringArray = array.Split(" ");
+    return stringArray;
+}
+// Метод создания массива из менее, чем трёх символов
 string[] CreateNewArray(string[] array)
 {
     int count = 0;
