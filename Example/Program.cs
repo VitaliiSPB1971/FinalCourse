@@ -1,4 +1,9 @@
-﻿// Метод преобразования строки в массив
+﻿string ReadString()
+{
+    Console.WriteLine("Введите слова через пробел:");
+    return Console.ReadLine();
+}
+// Метод преобразования строки в массив
 string[] StringToArray(string array)
 {
     string[] stringArray = array.Split(" ");
