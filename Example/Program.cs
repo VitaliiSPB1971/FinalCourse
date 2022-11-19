@@ -32,3 +32,25 @@ string[] CreateNewArray(string[] array)
     }
     return newArray;
 }
+// Метод печати массива
+void PrintArray(string[] array)
+{
+    if (array.Length != 0)
+    {
+        Console.WriteLine("Новый массив из не более трех символов:");
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.Write($"{array[i]} ");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Таких значений нет!");
+    }
+}
+
+string str = ReadString();
+string[] array = StringToArray(str);
+string[] newArray = CreateNewArray(array);
+Console.WriteLine();
+PrintArray(newArray);
